@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button id="green">green</button>
+<button id="orange">orange</button>
+
+
+
+
+ <script>
+
+        //lexicall scoping
+          //funtion ke ander function outer function ke access kar skta hai parent function ke var acces kar skte hai but childs nhi hai
+        // function outer(){
+        //     let username="mamta"
+        //     function inner(){
+        //         console.log(username)
+        //     }
+        //     inner()
+    
+        // }
+        // outer()
+        // console.log(username)
+
+        // closure 
+        //yahan pe reference bhejta hai and ye inner ke sath outer ko bhi run krta hai 
+//puri memory share hoti hai pura lexical scop jata 
+        function outer(){
+            let username="mamta"
+            function inner(){
+                console.log(username)
+            }
+            return inner;
+    
+        }
+        const a=outer()
+        a();
+       
+
+        // document.getElementById("orange").onclick=function(){
+        //     document.body.style.backgroundColor='orange'
+        // }
+        // document.getElementById("green").onclick=function(){
+        //     document.body.style.backgroundColor='green'
+        // }
+
+
+        function clickhandle(color){
+            // document.body.style.backgroundColor= `${color}`
+          return  function(){
+                document.body.style.backgroundColor= `${color}`
+
+            }
+        }
+
+    document.getElementById("orange").onclick=clickhandle("orange")
+
+    document.getElementById("green").onclick=clickhandle("green")
+    </script>
+    </body>
+
+
+</html>
