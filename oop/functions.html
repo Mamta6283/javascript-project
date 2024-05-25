@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//function: it is a block of code designed to perform a particular task 
+// syntax  of function is function myfunname(){ code }
+
+
+//it is block of code that perform a specific task can be invoked whenever need 
+
+/*function function name(parameter1, parameter2){
+    code here variable are local var
+    
+}
+*/
+// you can write function without agrument and parameter
+//value bhu=i return krta hai and retrun ke baad wale statment excute nhi krta hai
+
+// function myfuntion(msg,n)
+// {
+//     // console.log(msg)
+//     console.log(msg*n)
+// }
+// // myfuntion("mamta")
+// let val=myfuntion(2,3);
+
+// console.log(val)
+
+
+
+// let hello=()=>{ //wihtout any agrument and parameter
+//     console.log("hello")
+//     return "hi"
+// }
+
+// let v=hello();//return value store in this invoke funtion 
+// console.log(v)
+
+
+// function one(x,y){ //with argument and parameter
+//     return  1+(x+y)/2
+// }
+// let a=1;
+// let b=2;
+// let c=3;
+// console.log("sum of a and b is",one(a,b));
+
+
+//local variable of function and block scope of function 
+
+// function sum(a,b){
+//     return(a+b)
+//     console.log(a+b)
+// }
+
+// let res=sum(2,3);
+// console.log(res)
+
+//function :
+
+console.log("function")
+ 
+// function myfun(a,b){//parameter
+
+//     console.log("this is sum of ",(a+b))
+//  }
+//  let c=2;
+//  let d=3;
+//  myfun(c,d);// arguments value
+
+// nan means not a number when we are trying to add string with number
+
+//function sum(a,b){
+
+    //local variables of function  -->block  scope 
+   // s=a+b;
+    //return s ;//when we dont want to print anything then you can use after reuturn koi bhi statment excute nhi hota hai.....
+//}
+
+// let val=sum(9,4);//here return value will be stored 
+// console.log(val)
+
+//arrow function :
+//compact of way of writing a function
+
+//const functionname=()=>{
+    // do some work}
+
+
+   /* const arrow=(a,b)=>//it will give the value as it is 
+    {
+        console.log(a+b);
+    };
+    arrow(6,5)
+
+    function mul(a,b){
+                 console.log(a*b)             
+    }
+
+    const a=(a,b)=>{
+        console.log(a*b)
+    }
+    a(10,10)
+    mul(3,4)*/
+
+    // const print=()=>{
+    //     console.log("hello")
+    // }
+
+    //it will check the vowel 
+/*function a(str){
+    let count=0;
+    
+    for(let i of str){
+        // console.log(i,str)
+        if (i==="a"|| i==="e"||i==="i"|| i==="o"|| i==="u"){
+           console.log("ys this is ",i)
+            count++
+        }
+    }
+   
+    console.log(count);
+}
+//console.log(count)
+a("hello");*/
+
+//for each loop here it is a function 
+
+// jab for each loop kisi data structure ke sath jud jata hai bind ho jata hai then called method 
+//we use when we want to excute the array element
+
+// function myfun(abc){
+//     console.log(abc)
+//     return abc
+// }
+
+// function abc(){
+//     return abc //hum function ko pass kr skte hai as agrument to another function
+// }
+
+// let arr=[10,20,30,40];
+
+
+//one way to write
+// arr.forEach(function print(val){
+//     console.log(val)
+// })
+//  arr.forEach((val,idx,arr)=>{ //here is value of an array ,idex,elements
+//     // console.log(arr)
+//     console.log(val,idx,arr);
+//  });
+ //higher order method is for each loop dusre fuction ko as parameter use kar rhe and jab another function return kr rhe hai to 
+
+// let a=[2,7,3,4,5,6];
+
+// a.forEach((val,a,idx)=>{
+//     // return val*val;
+//     let sum=val*val
+
+//     console.log(sum,a,idx)
+// });
+
+//function
+
+// function fun(){
+//     console.log("hello")
+// }
+
+// fun();
+  
+//arrow function and using arguments and parameter
+// const myfun=(val)=>{
+//     console.log("hello")
+//     console.log(val)
+// }
+// const num=4;
+// myfun(num);
+// myfun("mamta")
+
+
+
+// const cal=(val,num)=>
+// {
+//     for(let i=0; i<=num; i++){
+//         console.log("hello")
+//         console.log(val+val)
+//     }
+// }
+// cal(6,3);
+
+//return statment 
+
+// const sum=(num1,num2)=>{
+//     console.log(num1+num2)
+//     return num1+num2
+
+// }
+// let res=sum(9,9);
+// console.log(res)
+
+
+// const hello=()=>{
+//     console.log("yo")
+//     return "hello"
+// };
+// hello();
+// const res=hello();
+// console.log(res)
+
+
+//function practice 
+
+//1)
+
+const chill=()=>{
+    console.log("doing some chilling");
+    for(let i=0; i<=3; i++){
+        console.log("chilling....",i)
+    }
+    console.log("that was ice called");
+}
+chill();
+
+
+//2)
+
+// const remainder=(num,mod)=>{
+//      if(num%mod==0)
+//      {
+//         console.log("even")
+//         return true;
+//      }
+//      else if(num%mod!=0){
+//         return false;
+
+//      }
+//      else{
+//         console.log("nothing")
+
+//      }
+// }
+// const res1=remainder(10,7);
+// const res2=remainder(100,10)
+// console.log(res1)
+// console.log(res2)
+
+
+// //3)
+
+
+// const login=(username,password)=>{
+//     if(username=="admin"&&password=="lol"){
+//         return true
+//     }
+//     if(username=="monkey"&&username=="123"){
+//         return true
+//     }
+//     if(username=="moomo"&&username=="farm"){
+//         return true
+//     }
+//}
+
+
+// const test1=login("admin","lol");
+// console.log(test1)
+
+// //4)
+
+/*let square=(num)=>{
+         return num**2;
+
+}
+const sumofsqure=(num1,num2,)=>{
+    square=(num)=>{  //return square(num1)+square(num2 you can do something like that
+        
+        return num**2;
+    }
+    
+
+    return num1**2+num2**2;
+}
+const te=sumofsqure(2,3);
+console.log(te)
+const tee=sumofsqure(3,4);
+console.log(tee)
+const re=square(4);
+console.log(re);
+
+const res=sumofsqure(square)*/
+
+// function square(num){
+//          return num**2
+// }
+// function sumofsqure(num1,num2){
+//              return num1**2+num2**2
+// }
+
+
+/*function login(username){
+    //return `${username}just logged in `;
+    if(username===undefined){
+        console.log("plaese enter username")
+        return 
+    }
+    return `${username}just logged in `;
+}
+console.log(login("mamta "))
+console.log(login())
+
+function calculateprice(...num1){//rest operator and spread op bundle mein milta hai (...)this will convert all tha given value into array
+        return num1
+}
+console.log(calculateprice(200,300,400))//function mein mutliple values kaise pas krta hai */
+
+// const user={
+//      username:"mamta",
+//      price:199,
+// }
+
+// function handleobj(anyobject){
+//     console.log("username is",anyobject.username,"price",anyobject.price)
+// }
+// handleobj(user)//obj ko as argument bhej diya function ke parameters
+
+// const array=[20,30,40,50]
+// function get(getarray){
+//     return getarray[1]
+// }
+// console.log(get(array));
+
+
+// function parameters  are local variable block of function with in function
+
+// const a= ((a,b)=>{
+//     return a+b;
+// })
+//     // console.log(a)
+// let b=a(2,3);
+// console.log(b)
+
+
+// const mul=((g,h)=>{
+//     return g*h
+// })
+
+// let c=mul(8,9);
+// console.log(c)
+
+//count vowels
+// function str(str1){
+//     let count=0;
+//     for(let i of str1){
+//         if(i==="a"||i==="e"||i==="i"||i==="o"||i==="u")
+//         {
+//             count++;
+//             console.log(count,i)
+    
+        
+//         }
+    
+//         console.log(i,str1)
+//     }
+//     console.log(count)
+// }
+// str("mamta rani ")
+
+let arr=[1,2,3,4,5,6]
+
+const a=arr.forEach((val,idx)=>{//harvalue at each idx
+    console.log(val,idx,arr)
+    
+});
+
+//higher order function for each loop is higher order kisi funtion ko as parameter use krte hai ya function ko return kr rhe hote hai 
+
+let ar=[2,3,4,5,6,7]
+
+//call back funtio
+
+let cal=(num)=>{
+    console.log(num*2)
+}
+
+ar.forEach(cal)
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

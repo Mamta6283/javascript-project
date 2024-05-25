@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // loops and strings :it is used to excute a peice of code again again.
+           console.log("apna college");
+
+           // intialization ,condition and updation syntax is :
+           // print 1 to 5 loop program
+         /*  for(let i=1; i<=5;i++)
+           {
+            console.log("mamta"); //it will excute 5 times 
+           }
+           //console.log(i) //bad main excess anhi kar skte hai block ke bhar 
+           console.log("loop has ended");*/
+          /* let sum=0;
+           let n=7;
+           for(let i=1; i<=n; i++)
+           {
+            sum=sum+1;//sum=0+1=1 //sum=1+2=3 , sum=2+3=5 sum=5 5+4=10 10+5=15 sum=15+6=21
+            //console.log("sum=",sum);
+            
+            
+           }
+           console.log("sum=",sum);
+           console.log("loop has ended");*/
+
+           //infinite loops that never ends stopping condition if we give true to this ....
+
+           /* for(let i=1; i>0; i++)
+           {
+            console.log("never ends")
+           }*/
+
+           //while loop :it also excute some block of code repeatdly first it will check the condition then excute else part but in do while first it excute the code the it will check the condition 
+
+        //    let i=1;
+        //    while(i<=5)
+        //    {
+        //     console.log("i=",i)
+        //     i++;
+        //    }
+        //    console.log("loop has ended");
+        
+        //do while
+
+       /* let i=20;
+        do
+        {
+            console.log("started")
+            i++;
+
+        } while( i<=10);*/
+
+
+        //for-of- loop
+        //for-of it help in loop on some special type of data and this will work on strings
+
+
+
+        //let str ="apnacollege";
+       // let size=0; //it will show the size of character  it will step by step go to index
+       /* for(let i of str) //itrator or loop iske ander character ajyaga 
+        {
+            console.log(i);
+            size++;
+        }
+        console.log(size) //11*/
+
+        //for-in loop is used with object it will return key in(key:value pair)
+
+        /*let student ={
+            name:"mamta rani",
+            age:20,
+            cgpa:3.4,
+            ispass:true,
+        };
+        for(let key in student ){
+           // console.log(i);//here it will return only key 
+
+            console.log("key=",key,"value=",student[key]);
+            //it will return key and value as well 
+        }*/
+
+
+        //practice
+
+        /*let num=0 ;
+        
+          
+        while(num<=100);
+         
+        
+        { 
+            console.log("num=",num)
+        
+            num++;
+        }
+        console.log("loop has ended")*/
+
+        //by using for loop
+        
+         /*for(let num=0; num<=10; num++)
+         { if(num%2==0){ //even if (num%2!=0) this will return odd value
+            console.log(num)
+         }
+            //console.log(num)
+         }*/
+
+         /*let gamenum=25;
+         let user=prompt("guess the numer ");
+         while(user !=gamenum)
+         {
+            user=prompt("you entered wrong number ,gues the number");//prompt hamesha string return krti hai
+         }
+         console.log("you enter right number");*/
+
+
+
+
+         //strings :it is squence oof character every sstrings that we create in js they all have inbuilt  properties and funtion -methods 
+
+        // let str="mamta";
+         //console.log(str[3]);//it will show the position
+
+         //template literals a way to embedded expresions in strings
+
+        /* let obj={
+            item:"pen",
+            price:45,
+         }
+         console.log("the cost of",obj.item,"is",obj.price);//this normal way of writting a object 
+
+         let output=`the cost of ${obj.item} is ${obj.price}`;//this using template literals, when we create strings by doing by substitution of placeholders(koi expression embed karna) this is called string interpolatiion
+
+         console.log(output)
+
+         
+         let sentences =`this is templatae string${1+34}`;
+         console.log(sentences);
+         //escape characters 
+       
+         let str=("apna\ncollege"); 
+         console.log(str.length)*///\n it will move the content to next line ye khud print nhi hote hai (\n)ye ekk single charcter ki trah cout hotee hai
+
+         //stings methods  these are bulit in function to manipulate 
+         
+         //hamre methods kabhi origianl string ke ander value change nhi karega it always return new value new string create with a new value method and variable camel case mein hoti hai 
+
+         //strings are immutable or cannot changed hamesha new string banan hota hai
+        //  let str="  mamta rani       ";
+        //  let newstr=str.toUpperCase();
+        //  console.log(str.trim())
+        
+        //  str=str.toLowerCase();
+
+
+        //  let nee=str.slice(0,3);
+        //  console.log(nee)
+        //  console.log(newstr);
+        //  console.log(str);
+        //  let str1="mamta im learning coding ";
+        //  let str2="rani";
+        //  let str3= "hello"+str2.concat(str1);
+        //  let str="hellolo";
+        //  console.log(str.replace("o","p"));
+        //  console.log(str.replaceAll("lo","p"))
+        //  str1=str.charAt(4);//position of character
+        //  console.log(str1)
+      //  console.log(str3)
+
+
+      //paractice
+
+    //   let fullname=prompt("entre your full name without space");
+
+    //   let username="@"+fullname+fullname.length;
+    //   console.log(username);
+   
+    //calculate the sum 0f 1 to 100
+
+    /*let sum=0;
+    for(let i=0; i<=10;i++)
+    {
+        sum=sum+i;
+        console.log(sum);
+    }
+    console.log("sum=",sum)
+    console.log("loop has ended")*/
+
+//strings
+ // /n it is just includse 1 cout
+ // .includes() it will return true and false value
+ let str1="mamta"
+ console.log(str1)
+ console.log(str1.toUpperCase())
+
+
+ let str="the amount is 1000"
+ let amount=str.slice(0,13);
+ console.log(amount)
+ let friend="deepika"
+ friend[2]="r"//it is not changed because it is immutable
+
+
+
+
+
+
+
+
+           
+    
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

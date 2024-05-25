@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //loops when you want ot repeat set of insturcttion repeatdly.
+        console.log("loops and strings");
+         //for loop 
+        //  let sum=5;
+
+        //  let num;
+        //  for(let i=0; i<=10; i++)
+
+        //  {
+        //     sum=sum+i;
+        //     num=i%2;
+        //     console.log("num",num)
+        //     console.log("sum",sum);
+        //     console.log("value of i",i)
+        //  }
+      
+     //reverse counting 
+        // for(let i=5; i>=0; i--)
+        // {
+        //     console.log(i);
+        // }
+
+        // for(i=1; i<=6; i++)
+        // {
+        //     if(i==4)
+        //     break;//this is to stop loop 
+        // else
+        //     console.log(i)
+        // }
+ //continue 
+//    for(i=1; i<=6; i++)
+//    {
+//     if (i==4)
+//     continue;//niche wale code ko continue nhi krga iteration ke pass chla jayega
+// else
+// console.log(i)
+//    }
+
+
+//while loop  syntax;
+/*intialization
+while(condition)
+{
+    code to be excuted
+}*/
+
+// let i=1;//i=5(reverse couting )
+// while(i<=6)
+// {
+//     console.log(i)
+//     i++//i--
+// }
+ 
+//do while loop it will atleast excute the code once then it will check the condition of 
+
+// let i=6;
+// do{
+//     console.log("first print ")
+//     i++
+// } while(i<=5)
+// console.log("second time")
+
+//strings :
+//  let name="mamta"
+//  let lname='rani'
+
+//  let  fname=`this is 
+//  template`; //jis way mein string chahiye us way se ap likh skte ho jo likha hai wesa hi likha print hoga
+//  console.log(fname,name,lname)
+
+//  let anme=new String("mamta")// this is new way of creating string
+//  console.log(anme)
+
+//string method 
+
+// let opt1="english"
+// let opt2="HINDI"
+
+//let ans=console.log(opt1+opt2)//stirng concat means apss mein jodne ka kam karte hai 
+
+//let fans=`${opt1} and ${opt2}` //value is tarreke se templatee mein print hota hai 
+
+//let anss=console.log(opt1.length) //str.length to check length 
+
+// let ans1=console.log(opt1.toUpperCase());
+// let ans2=console.log(opt2.toLowerCase())
+//   let str="hello mamta"
+//   let result=console.log(str.substring(2,9))//kha se kha tak index chahiye 
+
+  //let str1=console.log(str.slice(3,7)) //same work as sustring(index1 ,index2 pos)
+
+ // let str3=console.log(str.split('\\ '))// it will spilit into index   kis way meink split kar skte hai \\ ,\("")double  comma ke sath back slash you can with that 
+
+  //console.log(str3.join(",")) not working here this function 
+
+
+//let sum=prompt("enter the vlaue");
+//let sum=0;
+
+// for(let i=0; i<=5; i++)
+// {
+//     sum=sum+i;
+//     console.log("multiple of this num is ",sum);
+// }
+
+  
+
+///progrma to add first natural number
+
+// let sum=0;
+// let n=prompt("enter the value of n")
+// n=Number.parseInt(n)
+// for(let i=0; i<=n; i++)
+// {
+//     sum=sum+i;
+//     console.log("sum=",sum)
+// }
+
+//factorial number
+// let n=5
+// let fact=1
+// for(let i=5; i>=0;i--)
+// {
+//     fact=fact*i
+//     console.log("fact",fact)
+// }
+// console.log(fact)
+
+let n=5
+let fact=1
+while(n>=0)
+{
+    fact=fact*n
+
+    console.log(fact)
+    n--
+    
+}
+// console.log("fact",fact)
+
+
+
+
+
+
+
+//for in loop
+let student ={
+    name:"mamta",
+    age:20,
+    cgpa:89,
+
+}
+for(let i in student)
+{
+    console.log("marks of i",i,"value",student[i])
+}
+    
+
+//for of loop 
+let str="javascript";
+let length=0
+for(let i of str)
+{
+    console.log("str=",i)
+    length++
+}
+console.log("lenght of string",length)
+
+
+
+//let num=9
+for(let i=0; i<=100; i++)
+{
+   // console.log(i)
+    if(i%2 ==0)     //if(i%2 !==0) it will show odd number
+
+    {
+        console.log("num=",i)
+
+    }
+   //console.log("odd")
+}
+
+let gamenumber=35
+let username=prompt("enter the number")
+// if(gamenumber==username)
+// {
+//     console.log("yes it is right")
+// }
+// else{
+//     prompt("again enter the number")
+// } this will learn only once time ek bar hi puchega
+
+while(gamenumber!=username)
+{
+    username=prompt("enter the again")
+}
+console.log("yes it is ")
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
