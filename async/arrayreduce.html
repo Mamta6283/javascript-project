@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//reduce the array into a single value it returns that single value
+
+// let arr=[1,2,3,4];
+// const b=arr.reduce((res,curr)=>{
+//     return  res+curr;
+// })
+// // let c=b(8,8);
+// // console.log(c)
+// console.log(b)
+
+//reduce: it reduce the array element  two arguments will taken
+
+
+// const city=["london","van","mumbai","new"]
+
+// const citi=city.reduce((res,citis)=>{
+//     return res+citis;
+// })
+// console.log(citi)
+
+
+//result apne current ke add ho jayega 
+// const num=[5,10,15,20,25,30,35]
+// let sum=0;
+// for(let i =0;i<num.length; i++){
+//     sum+=num[i]
+// }
+
+// console.log(num)
+
+// const sum1=num.reduce((res,num)=>{
+//     console.log(res,num)
+//     if(num<20){
+//         return res+num //final result will not come it will return undefined end up the code
+//     }
+    // return res+num
+//     // return 0;//it will show 0 instead und.....
+//     return res
+// },0)
+// // console.log(num)
+// console.log("......")
+// console.log(sum1)
+
+
+// let str=["mamta ","sohit"]
+
+// let sum=str.reduce((res,curr )=>{
+//     return res+curr+" "
+// })
+
+// console.log(sum)
+
+
+// const city=["van","berlin","mum","bak","toe"]
+
+
+// const co=city.reduce((res,curr)=>{
+//    if(curr==="van"){
+//     return res;
+
+//    }
+//     return res+curr+"-"
+// },"")
+
+// console.log(co)
+// console.log(city)
+
+
+// const nums=[5,10,15,20,25,30,35]
+
+// const redcued=nums.reduce((res,cur)=>{
+//     console.log(res,cur)
+//     res.push(cur);
+//     return res
+// },[])
+
+//practice
+
+//1)
+
+// const points=[55,56,57,58,59,60];
+
+
+// const sum=points.reduce((res,cur)=>{
+//               return res+cur;
+// },0)
+// console.log(points);
+// console.log(sum);
+
+const arr=["apple","tesla","space","amazon","meta","google","ibm"]
+ 
+const moobed=arr.reduce((res,cur,i)=>{
+    // return res+cur+"-"
+    if(cur.startsWith('a'))//htis fucntion tells the kha se shuru ho ltter
+    {
+        // console.log("starting with a")
+        return res;
+    } 
+    if(i==5) //if(i==arr.lenght)//and checking condition
+    {
+        return res+cur;
+    }
+    return res+cur+"-"
+},"-")
+console.log(moobed)
+
+//2)
+
+// const price=[1,23,19,99,85,2,32,87,8,5,2];
+
+// const after=price.reduce((res,cur)=>{
+//     if(cur>6){
+//         return res+cur;
+//         // console.log(res+cur);
+//     }
+    
+//         return res+cur*1.2;
+// },0);
+// console.log(after);
+// console.log(price)
+
+//3)
+
+//onst item=["light","phone","banana","book","noue"]
+
+
+// const caps=item.map((items)=>{
+//     return items.toUpperCase();
+// })
+
+//this is new way to write
+// .map((items)=>{
+//     return items.toUpperCase();
+// })
+
+// const concat=caps.reduce((res,cur)=>{
+//     return res+cur+" ";
+// },"")
+
+// .reduce((res,cur)=>{
+//     return res+cur+" ";
+// },"")
+
+
+// console.log(item)
+// console.log(caps)
+// console.log(concat)
+
+//4)
+
+// const num=[10,30,50,70,90];
+
+// const sqaure=num.map((nums)=>{
+//     return nums**2
+// });
+// const over=sqaure.filter((nums)=>{
+//     if(nums>1000)
+//     {
+//         return nums
+//     }
+// })
+// const final=over.reduce((res,cur)=>{
+//     return res+cur;
+// })
+
+// console.log(final)
+
+// console.log(sqaure)
+
+// console.log(over)
+
+
+// let a=[5,6,2,1,10,3]
+
+// const out=a.reduce((res,cur)=>{
+//     return res>cur?res:cur
+// })
+
+// console.log(out)
+
+
+// let marks=[97,64,32,49,99,96,86];
+
+// let output=marks.filter((nums)=>{
+//     if(nums>90){
+//         return nums
+//     }
+// })
+// console.log(marks)
+// console.log(output)
+
+let n=prompt("enter the number")
+let b=[];
+for(let i=0; i<=n; i++){
+    b[i-1]=i;
+    console.log(b)
+}
+
+const sum=b.reduce((res,cur)=>{
+    return res+cur;
+},0)
+// console.log(i)
+console.log(sum)
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

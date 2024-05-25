@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    [<title>Document</title>]
+</head>
+<body>
+    <script>
+
+
+//array :collection of item
+
+//let marks=["mamta","riya","ramna","anter","ram"];
+//let a=[10,20,30,40,50];
+//console.log(marks.length);//length of array 
+//marks[0]="hello"//changes value
+//console.log(marks[0]); //printing through only index
+
+//console.log(a);
+//strings are immutable in js but array are mutalble which can change on particular index 
+
+//you can use loop on array //stoping condition will be length of array 
+
+// for(let i=0; i<=marks.length; i++)
+// {
+//     console.log("marks is ",marks[i])
+// }
+
+//you can use for of loop and for in loop for array
+// for(let item of marks)
+// {
+//     console.log(item);
+//     console.log(item.toUpperCase());
+// }
+
+//let marks=[10,20,40,40,59,49];
+ //let sum=0;
+// for(let i=0; i<=marks.length; i++)
+// {
+//     sum=sum+marks[i] //two ways of doing +
+//    // sum+=marks[i]
+//     console.log(sum)
+// }
+// let avg=sum/marks.length;
+// console.log(avg)
+
+//  for (let i of marks)
+//  {
+//     sum=sum+marks[i];
+//     console.log(sum)
+//  }
+
+// let price=[200,400,500,500,600];
+// //let offer=price[0];//this is one way
+// let offer=300;
+
+// for(let i=0; i<price.length; i++)
+// {
+//     if(price[0]==price[i])  
+//     {                     //offer=price[i]/10
+
+//     offer=price[i]/10
+//     }
+//     console.log(offer)
+// }
+// if(price[i]==offer)
+// {
+//     offer=offer/10;
+//     console.log(offer);
+// }
+// console.log(offer)
+
+// }
+
+//this is using for of loop 
+
+// let i=0;
+// for(let val of price)
+// {
+//    // console.log("price of ",price[val])
+//    console.log(`value of ${i} is ${val}`)
+//    offer=val/10;
+//   price[i]= price[i]-offer
+//    console.log("offer",offer)
+//    console.log("after offer",price[i])
+//     i++;
+// }
+
+
+//array method :for changing any thing you can use loop 
+//push() to add the array at the end of array
+
+// let num=[10,20,40,50,20,70];
+ //let arr=["mamta","raman"]
+// let marks=[2,2,2,2]
+//num.push(23);
+//console.log(num);
+
+//pop() to delete form end and return array 
+//  let deleted= num.pop();
+//  console.log(num)//this will show all index
+//   console.log(deleted);//it will show which value is deleted
+//   console.log(arr);
+
+//   arr.push("anter");
+//   console.log(arr)
+//  console.log( arr.toString());//you can convert into string
+
+
+ //concat()to add two vlaues join multiple arrays of returns result
+
+
+//  let total =num.concat(arr,marks)//first array then write another array 
+//  console.log(total)
+
+
+
+ //unshitf ()to add start
+  //let tot=arr.unshift("anter")
+
+  //let tot=arr.shift()
+
+  //console.log("deleted",tot)
+  //console.log(arr)
+ //console.log(num)
+
+ //slice the array it will give peice of array
+ //console.log(num.slice(1,3));
+
+ //splice is used to delete and change a value into array
+
+ //add element
+ //console.log(num.splice(2,2,23,23))//(first is index ,sec is how many item you delte and uski jagah pe kons element dalna hai)
+ //console.log(num)
+
+ //delete element and add element
+
+ //console.log(num.splice(3,0,12));
+ //console.log(num)
+
+ 
+
+ //replace element
+ //console.log(num.splice(3,1,101))
+
+ //age splice mein only ekk value bhejo then uske baad wale element delete ho jayenge splice(4)
+
+ //practice
+
+//  let company=["bloomerg","microsofe","uber","google","ibm","netflix"];
+
+
+//  console.log(company.shift());
+//  console.log(company)
+
+//  console.log(company.splice(3,1,"ola"))//replace and changing
+
+//  console.log(company.unshift("amazon")
+
+//arrays :reference type mein array ,function ,object ,when we create an array then values stored in heap memory and variable stored in stack memory..for eg let arr=1,1,2;...
+//object is collection of key value pair let obj={key:value,key:value}
+
+
+//shallow memeory=actual data nhi bnta hai heap memory mein agr do refernece hai to ek same object ke data ko dusre refernce bhi usi ko point krta hai and deep memory explain....
+
+//arry is collection of items [],array consturctor two to create array 
+//creation of array []
+//let arr =[10,20,30,49,50,60];
+//console.log(arr);
+
+//using array constructor 
+//let a=new Array("mamta",1,true,"anter");
+//console.log(a);
+
+//built in methods
+
+//console.log(a.push("anter"));
+// a.pop();
+// a.shift()
+// console.log(a);
+// a.unshift("mamta");
+
+
+//index using you can use
+// console.log(a[0]);
+// console.log(a)
+
+// console.log(a.slice(1,3))==new part dega array ka
+
+//console.log(a.splice(1,2,"raman"))
+//console.log(a);
+
+//map =existing set valaue pe function run krna chate hai 
+// let ans=arr.map((number)=>{
+//     return number*number
+// })
+// arr.map((number,index)=>{
+//     console.log(number+1);
+//     console.log(index)
+// })
+// console.log(ans)
+
+
+//using for loop
+// for(let i=0; i<=arr.length; i++)
+// {
+//   let ans= arr[i]*arr[i];
+//   console.log("ans",ans)
+
+// }
+
+// for(let j=0; j<=arr.length; j++)
+// {
+//     console.log(arr[j]+1)
+//     let index=arr[j]
+//     console.log(arr[j])
+// }
+ //filter method
+
+// let even= arr.filter((number)=>{
+//     if(number%2==0){
+//         return true;
+//         // console.log(even);
+        
+//     }
+//     else{
+//         return false;
+//     }
+//  });
+//  console.log(even)
+
+//  for(let i=0; i<arr.length; i++)
+//  {
+//     if(arr[i]%2==0)
+//     {
+//         console.log("even",arr[i])
+//     }
+//  else{
+//         console.log("odd",arr[i])
+//     }
+//  }
+
+
+ //let err=[10,30,50,"mamta","anter",20,94]
+ //console.log(err)
+//you can filter number and string
+
+// let ans =err.filter((value)=>
+// {
+//     if(typeof(value)=="number")
+//     {
+//         return true;
+
+//     }
+//     else{
+//         return false;
+//     }
+    
+// });
+// console.log(ans);
+
+
+//using for loop in find out string and number in array
+
+// for(let i=0; i<=err.length; i++)
+// {
+//     if(typeof(err[i])=="string")
+//     {
+//         console.log(err[i])
+//     }
+//     else{
+//         console.log("num",err[i])
+
+//     }
+// }
+
+//reduce method acc and current is used 
+
+// let ans =err.reduce((acc,curr)=>
+// {
+//     return acc + curr;
+// }, 0);
+// console.log(ans);
+
+
+//let e=[20,40,10,80,50];
+//console.log(e);
+//e.sort();//it is used to sort a data 
+//console.log(e);
+
+//console.log(e.indexOf(2));//index value find
+
+
+//find method how it will work
+
+//for each loop 
+// let length=e.length
+
+// console.log(length)
+// e.forEach((value,index)=>{
+//     console.log("number:",value,"index",index)
+// })
+// for(let i=0; i<=e.length; i++){
+//     console.log(e[i]) 
+// }
+
+//for of loop
+// for(let key of e)
+// {
+//     console.log(key);
+// }
+
+// let obj={
+//     name:"sohit",
+//     age:21,
+//     job:"nothing"
+// };
+// for(let key in obj)
+// {
+//     console.log("key",key,"value",obj[key])
+// }
+
+//arrays with fuctions
+//console.log(e);
+// function getSum(e){
+//     let len=e.length;
+//     let sum=0;
+//     for(let i=0; i<=e.length; i++)
+//     {
+//         sum=sum + e[i];
+//     }
+//  //console.log(sum)
+//  return sum;
+// }
+// let total=getSum(e);
+// console.log(total);
+
+// let getsum=(e)=>{
+//     let sum=0;
+//     e.forEach((value) => {
+//         sum=sum+value;
+
+//     })
+//     return sum;
+
+//}
+// let total=getsum(e);
+// console.log(total);
+
+
+// let arr=[10,30,50,20,40];
+// console.log(arr)
+// console.log(arr[1]);
+// console.log(arr.length)
+//23console.log(arr.push(a))
+
+// do{
+
+// let a=prompt("set of array")
+
+// console.log(arr.push(a))
+// }while(a!=0)
+// console.log(arr)
+
+
+//array methods
+/*let arr=[10,20,30,40,50,60];
+//let b=arr.toString()//kb now is string it is used convert into string.
+//console.log(b)
+
+console.log(arr.join("mamta"))//it will join any thing 
+console.log(arr)
+
+arr.pop();//it used to delete the array in the end of array
+
+arr.push(67);//it is used add element to the end 
+
+arr.shift();//it will remove the element of the start of the array
+
+arr.unshift(23);//it will add the element of the array
+console.log(arr);
+console.log(arr.length);*/
+
+//array methods 2
+
+/*let arr=[10,30,40,40,55,90]
+console.log(arr)
+delete arr[0]//it will delete the element from the point of array and it will empty at that place
+let b=["mamta","anter","raman","riya"]
+
+let newarray=arr.concat(b)//it will merege two arrays and more
+console.log(newarray);
+console.log(arr.length)
+console.log(arr)
+
+
+let compare=(a,b)=>// it will sort into acsending order
+{
+    return b-a
+}
+
+let a=[10,40,30,80,50];
+console.log(a)
+a.sort()//it will modify original array when you convert your array into string then it will sort into string manner alphabeticlly
+// a.reverse();
+
+a.splice(2,2,23,23)//important new items add krne ke liye (position add,no of elements to remove,elements to be added)
+console.log(a)*/
+
+//let a=[10,20,30,40,50,60,60,70,80]
+//console.log(a)
+
+//let b=a.slice(2,6)//kha se slice chaiye you can give that number
+//console.log(b);
+
+//array with loops 
+
+// let num=[10,30,40,50,50,60]
+// for(let i=0; i<=num.length-1; i++)
+// {
+//     console.log("num",num[i])
+// }
+
+//this is another way of js for each loop is important 
+
+//num.foreach(value,index,array)=>{funtion logic}
+
+// num.forEach((element)=>
+// {
+//   console.log(element*element)
+// })
+/*for(let val of num)
+{
+   // let b=num[val]*num[val]
+    //console.log(b)
+    console.log([val])
+}
+
+for(let item in num)
+{
+    console.log(item)//ye apko key value return kerega in array as well 
+}*/
+
+//array from: it will convert html collection which is used in dom into array used to create an array from any other object 
+// let name="mamta"
+// let arr=Array.from(name)
+// console.log(arr)
+
+
+
+
+//reduce ,map,filter
+
+//let arr=[1,2,3,5,2,1]
+
+//map is used to when we want to create a new array but for each loop is used to when we want to make any operation in some any exsist element 
+//     let a =arr.map((value,index)=>
+
+// {
+//     console.log(value,index) //it will give value and index
+//     return value+1
+// })
+// console.log(a)
+// console.log(arr)
+
+//filter method is used to sirf wo element milenge jo app chate ho
+//original array ko modify nhi krta hai it will return a new array 
+
+// let a=arr.filter((value)=>{
+//     console.log(value)
+//     return value<40
+// })
+// console.log(a)
+
+
+//reduce method  // it will return value 
+
+//  console.log(arr)
+// let a=arr.reduce((h1,h2)=>
+// {
+//       return h1+h2
+// })
+// console.log(a)
+
+
+//array :practice
+/*let str=["mercury","vinus","earth","mars","nothing ","yes"];
+console.log(str);
+ console.log(str.push("jupiter"));
+ console.log(str)
+ console.log(str.unshift("sun"))
+ console.log(str)
+
+ console.log(str.splice(2,2))
+console.log(str)
+
+str.shift()
+console.log(str)*/
+
+//2)
+// let multiple=5;
+//  let a=[10,20,30,40,50];
+//  for(let i=0; i<=a.length-1; i++){
+//    let b= multiple*a[i];
+//    console.log("mulitple*a[i]=",    a[i],b)
+//  }
+ 
+//3)
+// let greeting="hello ,nice to meet you";//"h","e","l","l","o"stirng are gonna bhave like this array 
+// console.log(greeting);
+//  for(let i=0; i<=greeting.length; i++){
+//     // let c=greetings[i];
+//       console.log(greeting[i]);
+    
+//  }
+
+//4)
+// let grades=[55,63,82,98,91,43,100]
+// let sum=0;
+// console.log(grades)
+
+// for(let i=0; i<=grades.length; i++){
+//     sum=sum+grades[i]/grades.length;
+//     console.log(sum)
+// }
+ 
+//5) here array are not primitve data types and it will not copy any array to another array
+// let bakery=["cookie","biscuit","donut","sweets"];
+// console.log(bakery);
+// let mybakery=["foods","burger","pizza"];
+// console.log(mybakery);
+
+//let mybakery=bakery it will change together jismein bhi changes krenge do mein honge changes but
+
+// let result=bakery.concat(mybakery);
+// console.log(result)
+
+
+
+//array map :
+
+// let name=["mamta","anter","raman","rita","riya"]
+ 
+// const ar=name.map((str)=>{
+
+//        return str+str;
+       
+// })
+// console.log(ar)
+
+
+// let numbers=[10,20,30,40,50];
+
+// const b= numbers.map((number)=>{
+            
+//           return number*10;//it will store into b variable if there is no return vlaue then nothing will show here
+
+        //   console.log(numbers*12)//it will return undefined if we are not defining retrun
+// });
+//    console.log(b);
+//    console.log(numbers)
+
+
+//practice 
+//1)
+// let practice=[25,26,27,28,29,30];
+
+// const num=practice.map((number)=>{
+//     return number**2
+// })
+// console.log(practice)
+// console.log(num)
+
+
+
+//2)
+// let bools=[true,true,false,true,false,false]
+
+// const b=bools.map((val)=>{
+
+//     if(val===true){
+//         // console.log(true)
+//         return Math.random();//it will return random number this funtion buil t in  in js
+//     }
+//     if(val===false){
+       
+//         // console.log(false)
+//         return 0;
+//     }
+// })
+
+// console.log(bools);
+// console.log(b)
+
+
+//3)
+// let price=[1,23,19,85,2,32,87,8,5,2];
+
+// const taxedprices=price.map((num)=>{
+
+//         if(num>10){
+//             // let a=(num+(num*20/100));
+//             //console.log("price increased");
+//            // return a;
+//            return num*1.2
+
+//         }
+//         // else{
+//         //     return Math.random();
+//            // return 0;
+//         // }
+
+// });
+// console.log(price)
+// console.log(taxedprices)
+
+
+//5)
+
+// let items=["light","banana","phone","book","mouse"]
+
+// const plurals=items.map((item)=>{
+//     //return item+"s";
+
+//     if(item==="mouse"){
+//         console.log("mice")
+//         return "mice";
+//     }
+//     return item+"s"
+// });
+
+// console.log(items);
+// console.log(plurals)
+
+
+//6)
+//  const row=[10,20,30,40,50];
+
+// const m= row.map((number)=>
+// {
+//     const array=[];
+//     array.push(number)
+//       return array;
+// });
+
+// console.log(row);
+// console.log(m);
+
+
+
+//filter  its returning false and true and it filter //jo true hoga wohi jayega new array
+
+//let num=[1,2,3,4,5,6,7,8,9]
+
+// const even=num.filter((nums)=>{
+//     if(nums%2==0){
+//         return true;
+//     }
+//     else{
+//         return false
+//     }
+// })
+
+// let res=num()
+// console.log(res)
+// console.log(even)
+
+//1)
+//   let practice=[10,20,39,43,50]
+
+// const obj=practice.filter((num)=>{
+//     if(num%2==0){
+
+//         return true;
+//     }
+// return false;
+
+// })
+// console.log(practice)
+// console.log(obj)
+//3)
+
+
+// let country=["france","sidney","  unitded state"," india"]
+
+// const a=country.filter((val)=>{
+
+//            if(country.includes(" ")){//jo eleemnt space leta hai usko nhi krega send 
+//             return true
+//            }
+//    else{
+//      return false
+//    }
+
+// })
+//     console.log(country);
+//     console.log(a)
+
+//4)
+// let prices=[1.23,19.99,85.2,32.87,8,5,2];
+
+
+// const lowprrice=prices.filter((num)=>{
+//     if(num*15<10)
+//     {
+//         return  true;
+        
+//     }
+    
+// });
+//   console.log(prices)
+//     console.log(lowprrice)
+ //5)
+
+
+//  const value=[[1,2,3],[0,0,1],[3,6,9],[0,1,2]];
+
+//  const bo= value.filter((num)=>{
+
+//     if(num.includes(2)){
+//         return true
+//     }
+//     else{
+//         return false
+//     }
+//  });
+//  console.log(value);
+//  console.log(bo);
+ 
+
+//6)
+
+// let n=[10,20,30,40,50,60,70,80]
+// .map((num) => {
+//     return num*2
+// })
+
+// .filter((num)=>{
+//     if(num<50){
+//         return true
+//     }
+// })
+//console.log(n)
+
+// const times=n.map((num)=>{
+//     return num*2
+// })
+
+// console.log(times)
+// const time=n.filter((num1)=>{
+//     if(num1>50){
+//         // console.log("above")
+//         return true
+//     }
+// })
+
+// console.log(time)
+
+
+//reduce the array to a single value it returns that single value
+
+// let arr=[1,2,3,4];
+// const b=arr.reduce((res,curr)=>{
+//     return  res+curr;
+// })
+// // let c=b(8,8);
+// // console.log(c)
+// console.log(b)
+
+//reduce: it reduce the array element 
+
+
+// const city=["london","van","mumbai","new"]
+
+// const citi=city.reduce((res,citis)=>{
+//     return res+citis;
+// })
+// console.log(citi)
+
+
+//result apne current ke add ho jayega 
+const num=[5,10,15,20,25,30,35]
+let sum=0;
+// for(let i =0;i<num.length; i++){
+//     sum+=num[i]
+// }
+
+// console.log(num)
+
+const sum1=num.reduce((res,num)=>{
+    console.log(res,num)
+    if(num<20){
+        return res+num //final result will not come it will return undefined end up the code
+    }
+    // return res+num
+    // return 0;//it will show 0 instead und.....
+    return res
+},0)
+// console.log(num)
+console.log("......")
+console.log(sum1)
+
+
+// let str=["mamta ","sohit"]
+
+// let sum=str.reduce((res,curr )=>{
+//     return res+curr+" "
+// })
+
+// console.log(sum)
+
+
+
+
+
+
+    </script>
+</body>
